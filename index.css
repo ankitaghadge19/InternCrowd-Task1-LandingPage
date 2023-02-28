@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #93b8cc;
+}
+
+/* ----------------------------------------------------------Navbar----------------------------------------------------------------- */
+.nav {
+  background-color: #131433;
+}
+.nav-link {
+  color: #93b8cc;
+}
+.nav-link:hover {
+  color: #6c6afc;
+  text-decoration: underline;
+}
+.nav-link-active {
+  color: #6c6afc;
+  display: inline-block;
+  background-color: black;
+  border-radius: 8px;
+}
+
+label.logo {
+  color: #131433;
+  margin: 8px;
+  background-color: #93b8cc;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#navLogo {
+  height: 2.5rem;
+  padding: 5px 7px;
+  border-radius: 8px;
+  margin-left: 5.5px;
+}
+
+#label {
+  color: white;
+  padding: 3px;
+  padding-right: 36rem;
+  margin-top: 5px;
+}
+
+.headerImg {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* -------------------------------------------------Header------------------------------------------------------------------------- */
+
+.header1 {
+  padding: 40px;
+}
+
+.header2 {
+  background-color: #142642;
+  border-radius: 20px;
+}
+
+#quote {
+  text-align: center;
+  font-weight: bold;
+  color: #93b8cc;
+}
+
+.LMBtn {
+  text-align: center;
+}
+
+.btnLM {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.mar {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    to right,
+    rgb(147, 187, 204),
+    rgb(147, 187, 204)
+  );
+  margin-top: 5px;
+}
+
+.loggo {
+  margin-left: 5%;
+  margin-top: 38px;
+  margin-bottom: 16px;
+  height: 15.5rem;
+  width: 25rem;
+  border-radius: 0.8rem;
+}
+
+.wel {
+  margin-top: 25px;
+  font-size: xx-large;
+  color: #93b8cc;
+}
+
+.name {
+  font-weight: bold;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.introText {
+  color: #93b8cc;
+  text-indent: 3em;
+}
+
+/* -----------------------------------------Services------------------------------------------------------------------------ */
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 5rem;
+  padding-top: 15px;
+}
+
+.portfolio__item {
+  background: #142642;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  color: #93b8cc;
+  position: relative;
+  text-align: center;
+}
+
+.portfolio__item:hover {
+  border-color: #142642;
+  background: transparent;
+  color: #142642;
+}
+
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio__item-image img {
+  width: 11rem;
+  height: 8rem;
+  margin-left: 11px;
+  border-radius: 1rem;
+}
+
+.portfolio__item .text {
+  margin-bottom: 30px;
+}
+
+.portfolio__item h3 {
+  margin: 0.8rem 0px 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  color: #93b8cc;
+}
+
+.portfolio__item-cta:hover {
+  color: #142642;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.servicesBtn {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  margin-left: 55px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* -----------------------------------------Footer------------------------------------------------------------------------ */
+
+footer {
+  background-image: linear-gradient(to right, rgb(20, 38, 66), rgb(20, 38, 66));
+  margin-top: 3rem;
+  padding: 3rem 0;
+}
+
+.footerHead {
+  color: #93b8cc;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 40px;
+  color: #93b8cc;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.footer__socials a {
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 22px;
+  color: #93b8cc;
+  margin-top: 35px;
+}
+
+.footer__socials a:hover {
+  background: transparent;
+  color: rgb(26, 26, 104);
+  border-color: white;
+}
+
+/* ===============================Media Quries(Medium Devices)===================================== */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* ===============================Media Quries(Small Devices)===================================== */
+
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
+}
